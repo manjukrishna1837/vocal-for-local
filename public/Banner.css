@@ -1,0 +1,73 @@
+/** @format */
+
+.banner {
+  background-color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.banner__one {
+  background-color: white;
+  display: flex;
+  padding-left: 80px;
+}
+.banner__two {
+  background-color: white;
+  display: flex;
+  padding-left: 160px;
+}
+
+.banner__category {
+  width: 200px;
+  height: 130px;
+}
+.Grid__image--IV0GE {
+  width: 64px;
+  height: 64px;
+}
+
+.banner__one > button {
+  margin-left: 10px;
+  color: black;
+  text-transform: inherit; /*i meterial ui by defult all are upper case to convert to as we write ti is used*/
+  font-weight: 600;
+}
+.banner__two > button {
+  margin-left: 10px;
+  color: black;
+  text-transform: inherit; /*i meterial ui by defult all are upper case to convert to as we write ti is used*/
+  font-weight: 600;
+}
+.banner__two > button:hover {
+  color: #ff7779;
+  background-color: white;
+}
+.banner__one > button:hover {
+  color: #ff7779;
+  background-color: white;
+}
+@media only screen and (max-width: 600px) {
+  .banner__one {
+    background-color: white;
+    display: flex;
+    padding-left: 40px;
+  }
+  .banner__two {
+    background-color: white;
+    display: flex;
+    padding-left: 40px;
+  }
+  .banner__two > button {
+    margin-left: 10px;
+    color: black;
+    text-transform: inherit; /*i meterial ui by defult all are upper case to convert to as we write ti is used*/
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .banner__two {
+    background-color: white;
+    display: flex;
+    padding-left: 80px;
+  }
+}
