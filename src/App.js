@@ -4,6 +4,7 @@ import React from "react";
 import Home from "./Home";
 import Header from "./Header";
 import Addstore from "./Addstore";
+import Added from "./Added";
 
 import Desc from "./Description";
 
@@ -19,13 +20,16 @@ function App() {
             <SearchPage />
           </Route>
           <Route path="/desc">
-              <Desc/>
+            <Desc />
           </Route>
           <Route path="/addstore">
-              <Addstore/>
+            <Addstore />
+          </Route>
+          <Route path="/added">
+            <Added />
           </Route>
           <Route path="/">
-              <Home/>
+            <Home />
           </Route>
         </Switch>
       </BrowserRouter>
