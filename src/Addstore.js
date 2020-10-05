@@ -1,26 +1,17 @@
 /** @format */
 
-import { Button, Avatar } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import React, { useState } from "react";
-import fire from './firebase';
+import { useHistory } from "react-router-dom";
+
 function Addshop() {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetdescription, settweetdescription] = useState("");
   const [tweetLocation, settweetLocation] = useState("");
   const [tweetphone, settweetphone] = useState();
-//vadda boss
-  const sendTweet = (e) => {
-    e.preventDefault();
-    fire.database().ref( tweetMessage).set({
-      Location:tweetLocation,
-      Discription:tweetdescription,
-      Phone : tweetphone
-    });
-    setTweetMessage("");
-    settweetdescription("");
-    settweetLocation("");
-    settweetphone("");
-  };
+  //vadda boss
+  const histroy = useHistory();
+
   return (
     <div className="tweetBox">
       <form>
@@ -59,7 +50,7 @@ function Addshop() {
               placeholder="Add shop phone Number"
             ></input>
             <Button
-              onClick={sendTweet}
+              onClick={() => histroy.push("/added")}
               type="submit"
               className="tweetBox_tweetButton"
             >

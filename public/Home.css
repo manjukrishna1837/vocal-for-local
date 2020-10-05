@@ -1,4 +1,38 @@
 /** @format */
-.home__section{
-  margin-top:50px;
+.home__section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.MuiCardContent-root > h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.home__button {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+.home__button > button {
+  border-radius: 20px;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: tomato;
+  color: #fff;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+.home__button > button:hover {
+  color: tomato;
+  background-color: white;
+}
+.home__sectioncard {
+  margin-left: 80px;
 }
